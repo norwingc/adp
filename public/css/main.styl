@@ -1,0 +1,149 @@
+titulcolor = #35988E
+verdebajo = #91BA7E
+
+@import 'font.styl'
+@import 'nav.styl'
+@import 'slider.styl'
+@import 'pilares.styl'
+
+body
+	background-color white
+	color #797979
+	font-family 'Lato', sans-serif
+	font-size 18px	
+	margin 0
+	padding 0
+hr
+	border-top 4px solid #797979
+	margin 2em auto !important
+	
+.container
+	margin auto	
+
+.clear
+	clear both	
+.no-margin
+	margin 0
+.no-padding
+	padding 0
+
+.logo
+	margin 0 auto
+	display block
+	
+.titul
+	color white
+	text-align center
+	font-family subtitul
+	
+.subtitul
+	text-align center
+	font-family subtitul
+	color titulcolor	
+	
+.nosotros		
+	margin-top 2em
+	text-align center
+	.logo
+		width 200px
+		
+	.slogan		
+		font-family manteka
+		font-weight bold
+		font-size 14px
+		margin-bottom 2em
+		
+.pilares
+	.pilares-titul
+		color white
+		background url('../img/back-pilares.jpg')	
+		height 3.5em
+		text-align center		
+		background-repeat no-repeat
+		font-family monse
+		p
+			position relative
+			top 30%
+	.iconos
+		.salud
+			color #317E87
+		.organizacion
+			color #C23D52
+		.medioamgiente
+			color #2F794C 
+		.desarrollo	
+			color #C95C41 
+				
+.imagen-home
+	background-attachment fixed		
+	background-image url('../img/img1.jpg')
+	height 20em
+	margin-bottom 1em
+
+.ubicacion
+	height 20em
+	margin-bottom 2em
+	.mapa
+		height 20em	
+
+.menuother
+	text-align center
+	font-family 'Myriad Pro Regular'	
+	img
+		margin auto	
+		width 100px	
+		
+footer	
+	padding-top 10px
+	text-align center
+	background #363736
+	color white
+	.menu-footer
+		li
+			display inline-block
+			padding 0 10px
+			a
+				color white
+				text-decoration underline
+				&:hover
+					color white
+					
+	.dev
+		text-transform uppercase
+		padding 5px
+		background #35988e		
+		text-align right
+		
+@media (min-width:768px)	
+	.nosotros		
+		.slogan
+			font-size 1.2em	
+			p
+				margin 0	
+		p
+			font-size 1.2em
+			margin-bottom 1em
+	.subtitul
+		font-size: 3em
+		
+	.historia
+	.quienes
+		font-size 1.2em		
+	
+	.pilares
+		.pilares-titul
+			font-size 2em
+	
+	.iconos		
+		img
+			margin auto
+			display block
+			width 220px			
+		p
+			font-size 1.2em	
+	.menuother
+		margin 2em 0							
+			
+				
+			
+					

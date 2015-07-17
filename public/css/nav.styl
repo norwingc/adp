@@ -1,0 +1,77 @@
+/* NAV */
+
+.menu-icon	
+	-webkit-transition .4s ease
+	height 35px
+	margin-left 20px
+	margin-top 28px
+	position fixed
+	right 25px
+	transition .4s ease	
+	width 45px
+	z-index 999
+	background-color white
+	border-radius 5px
+	span
+		background-color #797979
+		display block
+		height 4px
+		margin 0 auto
+		position relative
+		top 15px
+		width 25px
+		&:before
+		&:after
+			background-color #797979
+			content ''	
+			display block
+			height 4px
+			position absolute
+			width 25px
+		&:before
+			margin-top -8px
+		&:after
+			margin-top 8px		
+	&:hover 
+		cursor pointer
+.menu-animation
+	-ms-transform rotate(90deg)
+	-webkit-transform rotate(90deg)
+	transform rotate(90deg)
+
+
+	
+.nav-list	
+	-webkit-transition .4s ease
+	display flex
+	flex-wrap nowrap
+	justify-content flex-start
+	list-style none
+	padding 5px 20px
+	position fixed
+	right 50px
+	text-align center
+	top 40px
+	transition .4s ease	
+	z-index 999
+	background-color rgba(black, .6)
+	border-radius 10px
+	a
+		color white
+		line-height 30px
+		font-size .9em
+		font-weight bold
+		max-width 140px
+		padding 5px .5rem
+		text-decoration none
+		text-transform uppercase
+		
+		&:focus
+			color #00527b
+		&:hover
+			color #35988E
+			
+.nav-animation
+	-webkit-transform translateX(-30px)
+	-moz-transform translateX(-30px)
+	transform translateX(-30px)	
