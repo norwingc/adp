@@ -68,27 +68,6 @@
 	<div class="ubicacion">
 		<div id="map" class="mapa"></div>
 	</div>	
-
-	<div class="menuother">
-		<div class="row no-margin">			
-			<div class="col-md-2 col-md-offset-2">
-				<img src="{{ asset('img/galeria.png') }}" alt="galeria" class="img-responsive">
-				<p>Galeria</p>
-			</div>
-			<div class="col-md-2">
-				<img src="{{ asset('img/proyectos.png') }}" alt="Proyectos" class="img-responsive">
-				<p>Proyectos</p>
-			</div>
-			<div class="col-md-2">
-				<img src="{{ asset('img/unete.png') }}" alt="Unete" class="img-responsive">
-				<p>Unete</p>
-			</div>
-			<div class="col-md-2">
-				<img src="{{ asset('img/contactenos.png') }}" alt="Contactenos" class="img-responsive">
-				<p>Contactenos</p>
-			</div>			
-		</div>
-	</div>
 @stop
 
 @section('js')	

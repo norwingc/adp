@@ -1,4 +1,5 @@
-.salud
+.saludinfo
+	min-height 130em	
 	.seccion-color
 		background-color titulcolor
 		height 2em
@@ -8,5 +9,131 @@
 		max-width 60%
 		margin auto	
 .informacion
+	
+	.overhidden
+		overflow hidden
+		width 100%
+		min-height 110em//50em
+		position relative
+	.align 
+		display inline-block
+		position absolute		
 	.subtitul
-		font-family 'Lato',sans-serif		
+		font-family 'Lato',sans-serif
+	.titulother
+		background-color titulcolor
+		color white
+		text-align center
+		margin-bottom 1.5em
+	.row
+		.icono
+			padding-left 5px
+			height 40px
+		.icon:not(no-margin)	
+			margin-bottom 1em
+		.texto
+			margin-bottom 1em
+			text-align justify
+			span
+				color titulcolor
+		.texto.no-margin		
+			margin-bottom 2em
+		.usaidlogo
+		.flegerlogo
+		.fontilleslogo
+			margin auto
+			display block
+			width 200px
+			margin-bottom 1em
+		.flegerlogo
+		.fontilleslogo	
+		.mapa
+			margin-bottom 1.5em		
+		.siguiente
+		.anterior	
+			display inline-block
+			color titulcolor
+			font-size 3em
+			text-align right	
+			&:hover
+				cursor pointer	
+		.anterior
+			text-align left
+	.first
+	.second
+	.three	
+	.four		
+		transition all 2s ease
+		width 100%			
+	.second
+		margin-left 100%		
+	.three
+		margin-left 200%	
+	.four
+		margin-left 300%	
+		
+					
+
+@media (min-width:667px)
+	.saludinfo
+		min-height 90em		
+	.informacion 
+		.titulother					
+			padding 5px
+		.overhidden
+			min-height 80em	
+	.saludinfo 
+		.img-titul		
+			max-width 20%
+			
+@media (min-width:768px)
+	.informacion 
+		.titulother				
+			text-align left
+			padding 10px
+		.row
+			.mapa
+				img
+					margin auto	
+					
+@media (min-width:1024px)
+	.saludinfo 
+		min-height 65em
+		.img-titul
+			max-width 80%
+			
+	.informacion 
+		.titulother	
+			margin-top 1em
+			font-size 1.2em
+			width 650px
+			border-radius 0 10px 10px 0
+		.titulfour
+			width 1000px	
+		.overhidden
+			min-height 50em	
+		.row
+			.usaidlogo
+				margin-bottom 0
+				margin-top -50px
+				width 250px
+			.flegerlogo	
+			.fontilleslogo	
+				margin-bottom 0				
+				width 200px
+			.flegerlogo
+				margin-top -120px	
+			.geraliat
+				margin-top -90px	
+				
+			.mapa
+				img
+					max-width 48%
+					margin -50px 0 0 0	
+					
+@media (min-width:1300px)
+	.informacion 
+		.row 
+			.icono
+				height 50px
+				margin-bottom 20px					

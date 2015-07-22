@@ -2,7 +2,7 @@
    <div class="menu-icon"><span></span></div>
     <nav>
       <ul class="nav-list hidden">
-        <li><a href="#">inicio</a></li>
+        <li><a href="{{ URL::to('/') }}">inicio</a></li>
         <li><a href="#">quienes somos</a></li>
         <li><a href="#">RHF-ADP</a></li>
         <li><a href="#">Proyectos</a></li>
