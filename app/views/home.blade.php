@@ -59,7 +59,7 @@
 				<p class="text-center salud">Condiciones higiénicas sanitarias, nutricionales, fortalecidas y comportamientos saludables</p>
 			</div>			
 			<div class="col-md-6">
-				<img src="{{ asset('img/desarrollo.png') }}" alt="desarrollo" class="img-responsive">
+				<a href="{{ URL::to('DesarrolloInstitucional') }}"><img src="{{ asset('img/desarrollo.png') }}" alt="desarrollo" class="img-responsive"></a>
 				<p class="text-center desarrollo"> Equipo de Trabajo articulado y fortalecido</p>
 			</div>
 		</div>

@@ -20,3 +20,8 @@ Route::get('SaludComunitaria', function()
 {
 	return View::make('salud');
 });
+
+Route::get('DesarrolloInstitucional', function()
+{
+	return View::make('desarrollo');
+});
