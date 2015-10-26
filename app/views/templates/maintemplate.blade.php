@@ -31,7 +31,8 @@
 
         <!-- Bootstrap -->
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-		
+		 
+		{{ HTML::style('css/camera.css') }}
 				
 		{{ HTML::style('css/main.css') }}
 	
@@ -88,6 +89,58 @@
 		
 		{{ HTML::script('js/asset/jquery.stellar.js') }}
 		{{ HTML::script('js/main.js') }}
+
+		{{ HTML::script('js/plugin/jquery-migrate-1.2.1.min.js')}}
+        {{ HTML::script('js/plugin/camera.min.js') }}
+        {{ HTML::script('js/plugin/jquery.mobile.customized.min.js') }}
+        {{ HTML::script('js/plugin/jquery.easing.1.3.js') }}
+		
+		
+			
+		<script type="text/javascript">
+			if($(window).width() < 760){
+                jQuery('.camera_wrap').camera({ 
+                    height: '250px',
+                    pagination: false,
+                    navigation: false,
+                    playPause: false,
+                    loader: false               
+                });
+            }else if($(window).width() > 760 && $(window).width() < 1024){
+                jQuery('.camera_wrap').camera({ 
+                    height: '350px',
+                    pagination: false,
+                    navigation: true,
+                    playPause: true,
+                    loader: 'pie'                
+                });
+            }else if ($(window).width() > 1024 && $(window).width() < 1300){
+                jQuery('.camera_wrap').camera({ 
+                    height: '450px',
+                    pagination: false,
+                    navigation: true,
+                    playPause: true,
+                    loader: 'pie'                 
+                });
+            }else if ($(window).width() > 1300 && $(window).width() < 1400){
+            	  jQuery('.camera_wrap').camera({ 
+                    height: '550px',
+                    pagination: false,
+                    navigation: true,
+                    playPause: true,
+                    loader: 'pie'                 
+                });
+            }else{
+            	 jQuery('.camera_wrap').camera({ 
+                    height: '600px',
+                    pagination: false,
+                    navigation: true,
+                    playPause: true,
+                    loader: 'pie'                 
+                });
+            } 
+		</script>		
+
 
 		@yield('js')	
 	</body>

@@ -1,4 +1,3 @@
-$(window).stellar();
 
 $(".menu-icon").click(function () {
 	$(this).toggleClass("menu-animation");

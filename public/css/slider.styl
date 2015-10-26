@@ -1,57 +1,60 @@
-.slider
+.slider	
 	position relative
-	.img1
-		background-attachment fixed
-		background-image url('../img/mana.jpg')
-		background-size 100%
-		height 210px
-		background-repeat no-repeat		
-		h1
-			font-size 18px
-			padding-top 10px
-			font-family 'Myriad Pro Regular'
+	height 250px	
+	.camera_wrap
+		position relative !important
 	.logo
 		position absolute
-		width 140px	
-		top 50px
-		left 30%
-		
-@media (min-width:768px)	
-	.slider
+		width 100px
+		top 0
+		left 10px
+	.img1
+		position absolute
+		bottom 0
+		left 50%
+		transform translateX(-50%)
+		width 100%
+		h1
+			font-size 1.5em
+			
+@media (min-width:667px)
+	.slider 
+		.logo
+			width 150px	
 		.img1
-			background-size cover
-			height 40em
 			h1
 				font-size 2em	
-			.titul-slider
-				font-family subtitul
-				color white
-				text-align center
-				font-size 2em	
-				
-		.logo
-			width 200px
-			top 60px
-			left 10px
-		.social
-			position absolute
-			bottom 80px
-			li
-				list-style none	
-		.nombre-slider
-			position absolute
-			bottom 0
-			right 0
-			color white
-			font-size 2em
 			
-
-@media (min-width:1024px)
-	.slider 
-		.img1 
-			.titul-slider	
-				font-size 3em		
+			
+@media (min-width:768px)
+	.slider
+		height 350px	
 				
+		.img1
+			h1
+				font-size 2.3em
+				color white
+			.subtitul-slider
+				margin-top 0
+				text-align center
+				font-family subtitul
+				
+@media (min-width:1024px)
+	.slider
+		height 450px	
 		
-						
+
+@media (min-width:1300px)
+	.slider
+		height 550px
+		.img1
+			h1
+				font-size 3em
+		.logo
+			top 10px
+			left 10px
+			width 250px		
 		
+@media (min-width:1400px)	
+	.slider
+		height 600px	

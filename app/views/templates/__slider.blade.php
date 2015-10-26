@@ -1,15 +1,10 @@
-<div>
-	<div class="img1" data-stellar-background-ratio="0.4">
-		<h1 class="titul no-margin no-padding" >Asociación para el Desarrollo de los Pueblos</h1>
-		<h1 class="computer titul-slider" >Reserva  Hidrica Forestal</h1>
-	</div>
-	<img src="{{ asset('img/logo.png') }}" alt="logo" class="logo" >
-	<div class="social computer">
-		<li><img src="{{ asset('img/facebooklogo.png') }}" alt=""></li>
-		<li><img src="{{ asset('img/facebooklogo.png') }}" alt=""></li>
-		<li><img src="{{ asset('img/facebooklogo.png') }}" alt=""></li>
-	</div>
-	<div class="nombre-slider computer">
-		San Jose de los Remates, Boaco-Nicaragua
-	</div>
+<div class="camera_wrap">
+    <div data-src="{{asset('img/img2.jpg')}}"></div>
+    <div data-src="{{asset('img/img1.jpg')}}"></div>
+    <div data-src="{{asset('img/mana.jpg')}}"></div>   
 </div>
+<div class="img1">
+	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>
+	<h1 class="computer subtitul-slider" >Reserva  Hidrica Forestal</h1>
+</div>
+<img src="{{ asset('img/logo.png') }}" alt="logo" class="logo" >
