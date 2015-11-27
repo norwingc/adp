@@ -114,7 +114,7 @@
                     playPause: true,
                     loader: 'pie'                
                 });
-            }else if ($(window).width() > 1024 && $(window).width() < 1300){
+            }else if ($(window).width() >= 1024 && $(window).width() < 1300){
                 jQuery('.camera_wrap').camera({ 
                     height: '450px',
                     pagination: false,
@@ -122,7 +122,7 @@
                     playPause: true,
                     loader: 'pie'                 
                 });
-            }else if ($(window).width() > 1300 && $(window).width() < 1400){
+            }else if ($(window).width() >= 1300 && $(window).width() < 1400){
             	  jQuery('.camera_wrap').camera({ 
                     height: '550px',
                     pagination: false,
@@ -138,7 +138,9 @@
                     playPause: true,
                     loader: 'pie'                 
                 });
-            } 
+            }
+
+            $(window).stellar(); 
 		</script>		
 
 

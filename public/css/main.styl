@@ -60,6 +60,7 @@ hr
 		text-align center		
 		background-repeat no-repeat
 		font-family monse
+		background-size 100%
 		p
 			position relative
 			top 30%
@@ -80,9 +81,11 @@ hr
 				
 .imagen-home
 	background-attachment fixed		
-	background-image url('../img/img1.jpg')
-	height 20em
+	background-image url('../img/9.jpg')
+	height 8em
 	margin-bottom 1em
+	background-size contain
+	background-repeat no-repeat
 
 .ubicacion
 	height 20em
@@ -118,6 +121,12 @@ footer
 		background #35988e		
 		text-align right
 		
+@media (min-width:667px)	
+	.iconos		
+		img
+			margin auto
+			display block
+		
 @media (min-width:768px)	
 	.nosotros		
 		.slogan
@@ -139,14 +148,17 @@ footer
 			font-size 2em
 	
 	.iconos		
-		img
-			margin auto
-			display block
+		img	
 			width 220px			
 		p
 			font-size 1.2em	
 	.menuother
-		margin 2em 0							
+		margin 2em 0
+		
+@media (min-width:1024px)
+	.imagen-home
+		height 15em
+
 			
 				
 			
