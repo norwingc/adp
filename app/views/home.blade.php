@@ -8,12 +8,12 @@
 
 @section('contenido')	
 	<div class="nosotros row no-margin">
-		<img src="{{ asset('img/logo.png') }}" alt="logo" class="col-md-2 img-responsive logo">
+		<img src="{{ asset('img/logo3.png') }}" alt="logo" class="col-md-2 img-responsive logo">
 		<div class="slogan col-md-9">
-			<p class="no-margin no-padding text-center">
+			<p class="no-margin no-padding text-center" style="line-height:1em">
 				“El Desarrollo no se reduce al siempre crecimiento economico, para ser autentico debe ser integral, es decir promover a toda la persona humana”				
 			</p>
-			<p class="no-margin no-padding text-right">EnCIclica Populorum Progressio Ss Pablo VI</p>
+			<p class="no-margin no-padding text-right" style="font-family:rage; color:rgb(136,122,0)">Encíclica Populorum Progressio Ss Pablo VI</p>
 		</div>
 		<div class="clear"></div>
 		<p class="container">Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género, generacional y ambiental.</p>
@@ -34,11 +34,11 @@
 	<div class="row container historia">
 		<div class="col-md-6">
 			<h2 class="subtitul text-center">Visión</h2>
-			<p>ADP es ampliamente reconocida por su liderazgo, capacidad de servicio y alto nivel de desempeño en la generación de capacidades locales, entre las familias campesinas, para mejorar su calidad de vida, en un marco de Desarrollo Rural a Escala Humana.</p>
+			<p class="text-center">ADP es ampliamente reconocida por su liderazgo, capacidad de servicio y alto nivel de desempeño en la generación de capacidades locales, entre las familias campesinas, para mejorar su calidad de vida, en un marco de Desarrollo Rural a Escala Humana.</p>
 		</div>
 		<div class="col-md-6">
 			<h2 class="subtitul text-center">Misión</h2>
-			<p>Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género, generacional y ambiental.</p>
+			<p class="text-center">Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género, generacional y ambiental.</p>
 		</div>
 	</div>
 	<div class="pilares">
@@ -47,20 +47,16 @@
 		</h2>
 		<div class="row no-margin iconos">
 			<div class="col-md-6">
-				<img src="{{ asset('img/organizacion.png') }}" alt="organizacion" class="img-responsive">
-				<p class="text-center organizacion"> Familias campesinas acompañadas por la ADP</p>
+				<img src="{{ asset('img/organizacioncomuni1.png') }}" alt="organizacion" class="img-responsive" id="organizacion">				
 			</div>
 			<div class="col-md-6">
-				<img src="{{ asset('img/medioambiente.png') }}" alt="medioambiente" class="img-responsive">
-				<p class="text-center medioamgiente">Manejo Sostenible de los Recursos Hídricos y Forestales para el Desarrollo Rural</p>
+				<img src="{{ asset('img/reservahidri1.png') }}" alt="medioambiente" class="img-responsive" id="medioambiente">				
 			</div>
 			<div class="col-md-6">
-				<a href="{{ URL::to('SaludComunitaria') }}"><img src="{{ asset('img/salud.png') }}" alt="salud" class="img-responsive"></a>
-				<p class="text-center salud">Condiciones higiénicas sanitarias, nutricionales, fortalecidas y comportamientos saludables</p>
+				<a href="{{ URL::to('SaludComunitaria') }}"><img src="{{ asset('img/saludcom1.png') }}" alt="salud" class="img-responsive" id="salud"></a>				
 			</div>			
 			<div class="col-md-6">
-				<a href="{{ URL::to('DesarrolloInstitucional') }}"><img src="{{ asset('img/desarrollo.png') }}" alt="desarrollo" class="img-responsive"></a>
-				<p class="text-center desarrollo">Equipo de Trabajo articulado y fortalecido</p>
+				<a href="{{ URL::to('DesarrolloInstitucional') }}"><img src="{{ asset('img/desarrolloinst1.png') }}" alt="desarrollo" class="img-responsive" id="desarrollo"></a>				
 			</div>
 		</div>
 	</div>
@@ -73,6 +69,37 @@
 @section('js')	
 
 	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+
+	<script type="text/javascript">
+		
+		$('#organizacion').hover(function(){
+			$(this).attr('src', "{{ asset('img/organizacioncomuni2.png') }}");
+		},
+		function(){
+			$(this).attr('src', "{{ asset('img/organizacioncomuni1.png') }}");
+		});
+
+		$('#medioambiente').hover(function(){
+			$(this).attr('src', "{{ asset('img/reservahidri1.png') }}");
+		},
+		function(){
+			$(this).attr('src', "{{ asset('img/reservahidri2.png') }}");
+		});
+
+		$('#salud').hover(function(){
+			$(this).attr('src', "{{ asset('img/saludcom1.png') }}");
+		},
+		function(){
+			$(this).attr('src', "{{ asset('img/saludcom2.png') }}");
+		});
+
+		$('#desarrollo').hover(function(){
+			$(this).attr('src', "{{ asset('img/desarrolloinst1.png') }}");
+		},
+		function(){
+			$(this).attr('src', "{{ asset('img/desarrolloinst2.png') }}");
+		});
+	</script>
 
   	<script>
   		var myLatlng = new google.maps.LatLng(12.137221, -86.281380);

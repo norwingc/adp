@@ -2,6 +2,8 @@
     <IfModule mod_negotiation.c>
         Options -MultiViews
     </IfModule>
+    
+    AddHandler application/x-httpd-php54 .php
 
     RewriteEngine On
 
