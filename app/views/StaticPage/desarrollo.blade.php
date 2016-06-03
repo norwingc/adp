@@ -11,7 +11,7 @@
 	<div class="seccion-color"></div>
 	<div class="informacion">		
 		<div class="container">
-			<div class="col-md-3"><img src="{{ asset('img/desarrollo.png') }}" alt="Desarrollo Institucional" class="img-responsive img-titul"></div>
+			<div class="col-md-3"><img src="{{ asset('img/DI1.png') }}" alt="Desarrollo Institucional" class="img-responsive img-titul"></div>
 			<div class="col-md-9"><h2 class="subtitul">Desarrollo Institucional</h2></div>
 		</div>
 		<div class="clear"></div>

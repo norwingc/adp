@@ -11,7 +11,7 @@
 	<div class="seccion-color"></div>
 	<div class="informacion">		
 		<div class="container">
-			<div class="col-md-3"><img src="{{ asset('img/salud.png') }}" alt="Salud Comunitaria Preventiva" class="img-responsive img-titul"></div>
+			<div class="col-md-3"><img src="{{ asset('img/SCP1.png') }}" alt="Salud Comunitaria Preventiva" class="img-responsive img-titul"></div>
 			<div class="col-md-9"><h2 class="subtitul">Salud Comunitaria Preventiva</h2></div>
 		</div>
 		<div class="clear"></div>

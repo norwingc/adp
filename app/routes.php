@@ -18,10 +18,20 @@ Route::get('/', function()
 
 Route::get('SaludComunitaria', function()
 {
-	return View::make('salud');
+	return View::make('StaticPage.salud');
 });
 
 Route::get('DesarrolloInstitucional', function()
 {
-	return View::make('desarrollo');
+	return View::make('StaticPage.desarrollo');
+});
+
+Route::get('MedioAmbiente', function()
+{
+	return View::make('StaticPage.medioambiente');
+});
+
+Route::get('OrganizacionSocial', function()
+{
+	return View::make('StaticPage.organizacionsocial');
 });

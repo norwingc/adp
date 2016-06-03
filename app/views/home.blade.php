@@ -10,10 +10,10 @@
 	<div class="nosotros row no-margin">
 		<img src="{{ asset('img/logo3.png') }}" alt="logo" class="col-md-2 img-responsive logo">
 		<div class="slogan col-md-9">
-			<p class="no-margin no-padding text-center" style="line-height:1em">
+			<p class="text-center" style="line-height:1em">
 				“El Desarrollo no se reduce al siempre crecimiento economico, para ser autentico debe ser integral, es decir promover a toda la persona humana”				
 			</p>
-			<p class="no-margin no-padding text-right" style="font-family:rage; color:rgb(136,122,0)">Encíclica Populorum Progressio Ss Pablo VI</p>
+			<p class="text-right" style="font-family:rage; color:rgb(136,122,0); margin-top:1em">Encíclica Populorum Progressio Ss Pablo VI</p>
 		</div>
 		<div class="clear"></div>
 		<p class="container">Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género, generacional y ambiental.</p>
@@ -32,7 +32,7 @@
 	</div>
 	<hr class="container">
 	<div class="row container historia">
-		<div class="col-md-6">
+		<div class="col-md-6 linea-horizontal">
 			<h2 class="subtitul text-center">Visión</h2>
 			<p class="text-center">ADP es ampliamente reconocida por su liderazgo, capacidad de servicio y alto nivel de desempeño en la generación de capacidades locales, entre las familias campesinas, para mejorar su calidad de vida, en un marco de Desarrollo Rural a Escala Humana.</p>
 		</div>
@@ -47,16 +47,20 @@
 		</h2>
 		<div class="row no-margin iconos">
 			<div class="col-md-6">
-				<img src="{{ asset('img/organizacioncomuni1.png') }}" alt="organizacion" class="img-responsive" id="organizacion">				
+				<a href="{{ URL::to('OrganizacionSocial') }}"><img src="{{ asset('img/OSC1.png') }}" alt="organizacion" class="img-responsive" id="organizacion"></a>
+				<p class="text-center organizacion"> Familias campesinas acompañadas por la ADP</p>
 			</div>
 			<div class="col-md-6">
-				<img src="{{ asset('img/reservahidri1.png') }}" alt="medioambiente" class="img-responsive" id="medioambiente">				
+				<a href="{{ URL::to('MedioAmbiente') }}"><img src="{{ asset('img/RHF1.png') }}" alt="medioambiente" class="img-responsive" id="medioambiente"></a>			
+				<p class="text-center medioamgiente">Manejo Sostenible de los Recursos Hídricos y Forestales para el Desarrollo Rural</p>
 			</div>
 			<div class="col-md-6">
-				<a href="{{ URL::to('SaludComunitaria') }}"><img src="{{ asset('img/saludcom1.png') }}" alt="salud" class="img-responsive" id="salud"></a>				
+				<a href="{{ URL::to('SaludComunitaria') }}"><img src="{{ asset('img/SCP1.png') }}" alt="salud" class="img-responsive" id="salud"></a>				
+				<p class="text-center salud">Condiciones higiénicas sanitarias, nutricionales, fortalecidas y comportamientos saludables</p>
 			</div>			
 			<div class="col-md-6">
-				<a href="{{ URL::to('DesarrolloInstitucional') }}"><img src="{{ asset('img/desarrolloinst1.png') }}" alt="desarrollo" class="img-responsive" id="desarrollo"></a>				
+				<a href="{{ URL::to('DesarrolloInstitucional') }}"><img src="{{ asset('img/DI1.png') }}" alt="desarrollo" class="img-responsive" id="desarrollo"></a>				
+				<p class="text-center desarrollo">Equipo de Trabajo articulado y fortalecido</p>
 			</div>
 		</div>
 	</div>
@@ -73,31 +77,31 @@
 	<script type="text/javascript">
 		
 		$('#organizacion').hover(function(){
-			$(this).attr('src', "{{ asset('img/organizacioncomuni2.png') }}");
+			$(this).attr('src', "{{ asset('img/OSC2.png') }}");
 		},
 		function(){
-			$(this).attr('src', "{{ asset('img/organizacioncomuni1.png') }}");
+			$(this).attr('src', "{{ asset('img/OSC1.png') }}");
 		});
 
 		$('#medioambiente').hover(function(){
-			$(this).attr('src', "{{ asset('img/reservahidri1.png') }}");
+			$(this).attr('src', "{{ asset('img/RHF2.png') }}");
 		},
 		function(){
-			$(this).attr('src', "{{ asset('img/reservahidri2.png') }}");
+			$(this).attr('src', "{{ asset('img/RHF1.png') }}");
 		});
 
 		$('#salud').hover(function(){
-			$(this).attr('src', "{{ asset('img/saludcom1.png') }}");
+			$(this).attr('src', "{{ asset('img/SCP2.png') }}");
 		},
 		function(){
-			$(this).attr('src', "{{ asset('img/saludcom2.png') }}");
+			$(this).attr('src', "{{ asset('img/SCP1.png') }}");
 		});
 
 		$('#desarrollo').hover(function(){
-			$(this).attr('src', "{{ asset('img/desarrolloinst1.png') }}");
+			$(this).attr('src', "{{ asset('img/DI2.png') }}");
 		},
 		function(){
-			$(this).attr('src', "{{ asset('img/desarrolloinst2.png') }}");
+			$(this).attr('src', "{{ asset('img/DI1.png') }}");
 		});
 	</script>
 
