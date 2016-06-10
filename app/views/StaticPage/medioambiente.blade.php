@@ -1,6 +1,6 @@
 @extends('templates.maintemplate')
 
-@section('title') ADP | Medio Ambiente y Cambio Climatico @stop
+@section('title') ADP | Medio Ambiente y Cambio Clim&aacurte;tico @stop
 
 @section('slider')
 	 @include('templates.__slider')
@@ -8,7 +8,7 @@
 
 @section('contenido')	
 <div class="medioambiente">
-	<div class="seccion-color"><h2 class="subtitul">Medio Ambiente y Cambio Climatico</h2></div>
+	<div class="seccion-color"><h2 class="subtitul">Medio Ambiente y Cambio Clim&aacurte;tico</h2></div>
 	<div class="informacion">		
 		<div class="container">
 			<div class="col-md-3"><img src="{{ asset('img/RHF1.png') }}" alt="Medio Ambiente y Cambio Climatico" class="img-responsive img-titul"></div>		
@@ -19,7 +19,7 @@
 			<p style="margin-top:1em">Durante 18 años la ADP ha trabajado, de manera ininterrumpida, para contribuir al manejo sostenible de los Recursos Hídricos y Forestales, en lo que hoy constituye la RESERVA HÍDRICA FORESTAL ADP (RHF-ADP)</p>
 			<img src="{{ asset('img/reservahdricaaqui.png') }}" alt="Reserva Hidrica" class="img-responsive" style="margin:auto">
 		</div>
-		<div class="titulother">Occidente Unido por la Salud de Las Familias (FAMISALUD) uno</div>
+		<div class="titulother">Reserva Hídrica Forestal</div>
 		<div class="row no-margin">
 			<div class="col-md-1 col-xs-2"><img src="{{ asset('img/ubicacionRH.png') }}" alt="Agencia" class="img-responsive icono"></div>
 			<div class="texto col-xs-10 col-md-8"><span>Ubicaci&oacute;n:</span> Localizada a los 12°36´674“ N y 85°42´ 725“ O a 107 km de Managua, de los cuales 100 km son en carretera y 7 kilómetros de camino de todo tiempo.</div>

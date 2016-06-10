@@ -17,7 +17,7 @@
 		<div class="clear"></div>
 		<div class="overhidden">
 			<div class="align first">
-				<div class="titulother">Occidente Unido por la Salud de Las Familias (FAMISALUD) uno</div>
+				<div class="titulother">Que Occidente Unido por la Salud de Las Familias (FAMISALUD) </div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/agencia.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Agencia de Cooperación:</span> Agencia de los Estados Unidos para el Desarrollo Internacional (USAID)</div>
@@ -45,7 +45,7 @@
 			</div>
 
 			<div class="align second">		
-				<div class="titulother">Creciendo Sano  dos</div>
+				<div class="titulother">Creciendo Sano</div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/agencia.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Agencia de Cooperación:</span>  Fundación Catriona Hargreves del Reino Unido.</div>
@@ -75,7 +75,7 @@
 
 			<div class="align three">			
 				<div class="clear"></div>
-				<div class="titulother">Plan de Lucha contra la Lepra tres</div>
+				<div class="titulother">Plan de Lucha contra la Lepra</div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/agencia.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Agencia de Cooperación:</span> Fundación Paul Émile Léger de Canadá y la Asociación Fontilles de España.</div>

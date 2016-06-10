@@ -11,7 +11,7 @@
 	<div class="seccion-color"><h2 class="subtitul">Programa de Organización Social Comunitaria</h2></div>
 	<div class="informacion">		
 		<div class="container">
-			<div class="col-md-3"><img src="{{ asset('img/OSC1.png') }}" alt="Medio Ambiente y Cambio Climatico" class="img-responsive img-titul"></div>		
+			<div class="col-md-3"><img src="{{ asset('img/OSC1.png') }}" alt="Medio Ambiente y Cambio Clim&aacurte;tico" class="img-responsive img-titul"></div>		
 			<div class="col-md-9">
 				<p style="margin-top:3em">Familias campesinas acompañadas por la ADP fortalecidas en sus capacidades organizativas y autogestionarias para lograr la coordinación y gestión con otros autores que les permita la consecución de recursos y medios para la solución de sus problemas y la satisfacción de sus necesidades.</p>
 			</div>
@@ -23,7 +23,7 @@
 
 		<div class="row no-margin">
 			<div class="col-md-1 col-xs-2"><img src="{{ asset('img/agenciaOSC.png') }}" alt="Agencia" class="img-responsive icono"></div>
-			<div class="texto col-xs-10 col-md-5"><span>Agencia de Cooperación:</span>  L” CEUVRE LEGER</div>
+			<div class="texto col-xs-10 col-md-5"><span>Agencia de Cooperación:</span> L´OEUVRE LEGER Canadá </div>
 			<div class="clear"></div>
 			<div class="col-md-1 col-xs-2"><img src="{{ asset('img/fechaOSC.png') }}" alt="Fecha" class="img-responsive icono"></div>
 			<div class="texto col-xs-10 col-md-5"><span>Fecha de ejecución:</span> Octubre/2009-Septiembre/2012</div>

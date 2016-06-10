@@ -8,26 +8,25 @@
 
 @section('contenido')	
 	<div class="nosotros row no-margin">
-		<img src="{{ asset('img/logo3.png') }}" alt="logo" class="col-md-2 img-responsive logo">
+		<img src="{{ asset('img/logo.png') }}" alt="logo" class="col-md-2 img-responsive logo">
 		<div class="slogan col-md-9">
 			<p class="text-center" style="line-height:1em">
-				“El Desarrollo no se reduce al siempre crecimiento economico, para ser autentico debe ser integral, es decir promover a toda la persona humana”				
+				“El Desarrollo no se reduce al siempre crecimiento económico, para ser auténtico debe ser integral, es decir promover a toda la persona humana”				
 			</p>
 			<p class="text-right" style="font-family:rage; color:rgb(136,122,0); margin-top:1em">Encíclica Populorum Progressio Ss Pablo VI</p>
 		</div>
 		<div class="clear"></div>
-		<p class="container">Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género, generacional y ambiental.</p>
-		<p class="container">ADP es ampliamente reconocida por su liderazgo, capacidad de servicio y alto nivel de desempeño en la generación de capacidades locales, entre familias campesinas, para mejorar su calidad de vida, en un marco de Desarrollo a Escala Humana.</p>
+	
 	</div>	
 	<hr class="container">
 	<div class="historia container">
 		<h2 class="subtitul text-center">Historia</h2>
-		<p>Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género,generacional y ambiental.</p>
+		<p>Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género,generacional y ambiental.</p>		
 		<p>ADP es ampliamente reconocida por su liderazgo, capacidad de servicio y alto nivel de desempeño en la generación de capacidades locales, entre familias campesinas, para mejorar su calidad de vida, en un marco de Desarrollo a Escala Humana.</p>
 	</div>
 	<hr class="container">
 	<div class="quienes container">
-		<h2 class="subtitul text-center">Quienes Somos</h2>
+		<h2 class="subtitul text-center">Qui&eacute;nes Somos</h2>
 		<p>Asociación para el desarrollo de los Pueblos-ADP es una asociación civil nicaragüense, de inspiración cristiana, autónoma, apartidaria, de interés social y no lucrativa.</p>
 	</div>
 	<hr class="container">

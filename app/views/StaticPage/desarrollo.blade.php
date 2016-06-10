@@ -15,7 +15,7 @@
 			<div class="col-md-9"><h2 class="subtitul">Desarrollo Institucional</h2></div>
 		</div>
 		<div class="clear"></div>
-		<div class="titulother">Occidente Unido por la Salud de Las Familias (FAMISALUD) uno</div>
+		<div class="titulother">Líderes en la Generación de Servicios y Capacidades Locales</div>
 		<div class="iconos">
 			<img src="{{ asset('img/desarrollo1.png') }}">
 			<span>DESARROLLO INSTITUCIONAL – ADP (2014-2018)</span>
