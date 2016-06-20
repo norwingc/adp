@@ -56,25 +56,38 @@
 
 		<section>
 			@yield('contenido')
+
+            <div class="sociales">
+                <p><a href="https://www.facebook.com/adpnic.webs.tl/" target="new"><img src="{{ asset('img/facebooklogo.png') }}" alt="" class="img-circle"></a></p>
+                <p><a href="https://youtu.be/MJNYua49yp4" target="new"><img src="{{ asset('img/youtubelogo.png') }}" alt="" class="img-circle"></a></p>
+            </div>
 		</section>
 
 		<div class="menuother">
 		<div class="row no-margin">			
 			<div class="col-md-2 col-md-offset-2">
-				<img src="{{ asset('img/galeria.png') }}" alt="galeria" class="img-responsive">
-				<p>Galeria</p>
+                <a href="{{ URL::to('ReservaHidrica') }}">
+    				<img src="{{ asset('img/galeria.png') }}" alt="galeria" class="img-responsive">
+    				<p>Galeria</p>
+                </a>
 			</div>
 			<div class="col-md-2">
-				<img src="{{ asset('img/proyectos.png') }}" alt="Proyectos" class="img-responsive">
-				<p>Proyectos</p>
+                <a href="{{ URL::to('/#Pilares') }}">
+    				<img src="{{ asset('img/proyectos.png') }}" alt="Proyectos" class="img-responsive">
+    				<p>Proyectos</p>
+                </a>
 			</div>
 			<div class="col-md-2">
-				<img src="{{ asset('img/unete.png') }}" alt="Unete" class="img-responsive">
-				<p>Unete</p>
+                <a href="{{ URL::to('PaginasAmigas') }}">
+    				<img src="{{ asset('img/unete.png') }}" alt="Unete" class="img-responsive">
+    				<p>Unete</p>
+                </a>
 			</div>
 			<div class="col-md-2">
-				<img src="{{ asset('img/contactenos.png') }}" alt="Contactenos" class="img-responsive">
-				<p>Contactenos</p>
+                <a href="#">
+    				<img src="{{ asset('img/contactenos.png') }}" alt="Contactenos" class="img-responsive">
+    				<p>Contactenos</p>
+                </a>
 			</div>			
 		</div>
 	</div>

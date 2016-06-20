@@ -3,7 +3,16 @@
 @section('title') ADP | Salud Comunitaria Preventiva @stop
 
 @section('slider')
-	 @include('templates.__slider')
+<div class="camera_wrap">
+    <div data-src="{{asset('img/slider/salud/1.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/salud/2.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/salud/3.jpg')}}"></div>   
+    <div data-src="{{asset('img/slider/salud/4.jpg')}}"></div>   
+    <div data-src="{{asset('img/slider/salud/5.jpg')}}"></div> 
+</div>
+<div class="img1">
+	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	
+</div>
 @stop
 
 @section('contenido')	
@@ -17,7 +26,7 @@
 		<div class="clear"></div>
 		<div class="overhidden">
 			<div class="align first">
-				<div class="titulother">Que Occidente Unido por la Salud de Las Familias (FAMISALUD) </div>
+				<div class="titulother">Occidente Unido por la Salud de Las Familias (FAMISALUD) </div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/agencia.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Agencia de Cooperación:</span> Agencia de los Estados Unidos para el Desarrollo Internacional (USAID)</div>

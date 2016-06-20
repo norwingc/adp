@@ -3,12 +3,20 @@
 @section('title') ADP | Medio Ambiente y Cambio Clim&aacurte;tico @stop
 
 @section('slider')
-	 @include('templates.__slider')
+<div class="camera_wrap">
+    <div data-src="{{asset('img/slider/ambiente/1.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/ambiente/2.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/ambiente/3.jpg')}}"></div>   
+    <div data-src="{{asset('img/slider/ambiente/4.jpg')}}"></div>       
+</div>
+<div class="img1">
+	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	
+</div>
 @stop
 
 @section('contenido')	
 <div class="medioambiente">
-	<div class="seccion-color"><h2 class="subtitul">Medio Ambiente y Cambio Clim&aacurte;tico</h2></div>
+	<div class="seccion-color"><h2 class="subtitul">Medio Ambiente y Cambio Clim&aacute;tico</h2></div>
 	<div class="informacion">		
 		<div class="container">
 			<div class="col-md-3"><img src="{{ asset('img/RHF1.png') }}" alt="Medio Ambiente y Cambio Climatico" class="img-responsive img-titul"></div>		
@@ -17,7 +25,7 @@
 			</div>
 			<div class="clear"></div>
 			<p style="margin-top:1em">Durante 18 años la ADP ha trabajado, de manera ininterrumpida, para contribuir al manejo sostenible de los Recursos Hídricos y Forestales, en lo que hoy constituye la RESERVA HÍDRICA FORESTAL ADP (RHF-ADP)</p>
-			<img src="{{ asset('img/reservahdricaaqui.png') }}" alt="Reserva Hidrica" class="img-responsive" style="margin:auto">
+			<a href="{{ URL::to('ReservaHidrica') }}"><img src="{{ asset('img/reservahdricaaqui.png') }}" alt="Reserva Hidrica" class="img-responsive" style="margin:auto"></a>
 		</div>
 		<div class="titulother">Reserva Hídrica Forestal</div>
 		<div class="row no-margin">

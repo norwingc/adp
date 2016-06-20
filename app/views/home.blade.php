@@ -2,8 +2,17 @@
 
 @section('title') ADP @stop
 
+
 @section('slider')
-	 @include('templates.__slider')
+<div class="camera_wrap">
+    <div data-src="{{asset('img/slider/index/1.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/index/2.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/index/3.jpg')}}"></div>   
+    <div data-src="{{asset('img/slider/index/4.jpg')}}"></div>       
+</div>
+<div class="img1">
+	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	
+</div>
 @stop
 
 @section('contenido')	
@@ -25,7 +34,7 @@
 		<p>ADP es ampliamente reconocida por su liderazgo, capacidad de servicio y alto nivel de desempeño en la generación de capacidades locales, entre familias campesinas, para mejorar su calidad de vida, en un marco de Desarrollo a Escala Humana.</p>
 	</div>
 	<hr class="container">
-	<div class="quienes container">
+	<div class="quienes container" id="QuienesSomos">
 		<h2 class="subtitul text-center">Qui&eacute;nes Somos</h2>
 		<p>Asociación para el desarrollo de los Pueblos-ADP es una asociación civil nicaragüense, de inspiración cristiana, autónoma, apartidaria, de interés social y no lucrativa.</p>
 	</div>
@@ -40,7 +49,7 @@
 			<p class="text-center">Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género, generacional y ambiental.</p>
 		</div>
 	</div>
-	<div class="pilares">
+	<div class="pilares" id="Pilares">
 		<h2 class="pilares-titul">
 			<p>NUESTROS PILARES</p>
 		</h2>

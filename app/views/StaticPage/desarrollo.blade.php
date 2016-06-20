@@ -3,7 +3,16 @@
 @section('title') ADP | Salud Comunitaria Preventiva @stop
 
 @section('slider')
-	 @include('templates.__slider')
+<div class="camera_wrap">
+    <div data-src="{{asset('img/slider/desarrollo/1.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/desarrollo/2.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/desarrollo/3.jpg')}}"></div>   
+    <div data-src="{{asset('img/slider/desarrollo/4.jpg')}}"></div>   
+    <div data-src="{{asset('img/slider/desarrollo/5.jpg')}}"></div>       
+</div>
+<div class="img1">
+	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	
+</div>
 @stop
 
 @section('contenido')	
@@ -39,7 +48,7 @@
 			<p>
 				Temas: Agua, Medio Ambiente, Desarrollo Rural, etc. <br>
 				Capacitaciones: Diagnóstico Rural Participativo, Sistema Contable ABC, etc. <br>	
-				Alianzas: Universidades (UNA, UNIAG), etc.
+				Alianzas: Universidades (Universidad Nacional Agraria -UNA, Managua, Universidad Internacional Agraria, UNIAG-Rivas), etc.
 			</p>
 		</div>
 		<div class="iconos">
@@ -55,7 +64,7 @@
 				familias campesinas.
 			</p>
 			<p>
-				Alianza realizada con la Asociación Familia Padre Fabretto en la obtención de 2,520
+				Alianza realizada con la Asociación Familia Padre Fabretto en la obtención de 6,012
 				cajas de Arroz fortificado con soya para el benficio de 3,817 estudiantes de primaria en
 				44 escuelas rurales, etc. <span class="leermas"> <a href="{{ URL::to('document/mas.pdf') }}" target="new">mas..</a></span>
 			</p>

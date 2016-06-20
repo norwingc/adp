@@ -35,3 +35,19 @@ Route::get('OrganizacionSocial', function()
 {
 	return View::make('StaticPage.organizacionsocial');
 });
+
+Route::get('ReservaHidrica', function()
+{
+	return View::make('StaticPage.reservahidrica');
+});
+
+Route::get('Noticias', function()
+{
+	return View::make('StaticPage.noticias');
+});
+
+Route::get('PaginasAmigas', function()
+{
+	return View::make('StaticPage.amigas');
+});
+
