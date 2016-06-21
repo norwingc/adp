@@ -65,8 +65,8 @@
 			</p>
 			<p>
 				Alianza realizada con la Asociación Familia Padre Fabretto en la obtención de 6,012
-				cajas de Arroz fortificado con soya para el benficio de 3,817 estudiantes de primaria en
-				44 escuelas rurales, etc. <span class="leermas"> <a href="{{ URL::to('document/mas.pdf') }}" target="new">mas..</a></span>
+				cajas de Arroz fortificado con soya para el benficio de 7,254 estudiantes de primaria en
+				58 escuelas rurales, etc. <span class="leermas"> <a href="{{ URL::to('document/mas.pdf') }}" target="new">mas..</a></span>
 			</p>
 		</div>
 
@@ -76,25 +76,11 @@
 		</div>
 		<br>
 		<div class="container infodesa" style="margin-top-2em">
-			<p>Nuestras páginas web promocionan el actuar de nuestra institución. A través de esta
-publicamos nuestros Boletines Anuales, damos a conocer las zonas en donde estamos
-trabajando y las actividades que estamos desarrollando; ofrecemos además nuestro
-aporte al cambio climático con nuestra Reserva Hídrica Forestal ubicada en San José de
-los Remates en Boaco.
-			</p>
-			<p>
-				Somos miembros activos de la agencia ALOP, Red Nicasalud y Federación de
-Organismos No Gubernamentales de Nicaragua.
-			</p>
-			<p>Elaboramos un Boletín Anual de nuestro quehacer institucional y lo compartimos con
-las Agencias Internacionales con la cuales trabajamos, además con Universidades,
-Fundaciones y Redes Nacionales, y con el sector público y privado.</p>
-			<p>Elaboramos dos videos en relación a la Reserva Hídrica Forestal – ADP, en los temas de
-Agua y Bosques, los que hemos compartido con las instituciones tanto
-Gubernamentales como Internacionales.</p>
-			<p>Elaboramos un brouchure del proyecto terminado de Manos Unidas…..
-Constancia de reconocimiento de trabajo de las Alcaldías de Belén, Nandaime, San José
-de los Remates, Somotillo y Delegaciones Municipales del MINED.</p>						
+			<p>Nuestras páginas web promocionan el actuar de nuestra institución. A través de esta publicamos Boletines Anuales, damos a conocer las zonas en donde estamos trabajando y las actividades que estamos desarrollando; además realizamos acciones de mitigación al Cambio Climático con la protección de los Recursos Naturales de la Reserva Hídrica Forestal ubicada en San José de los Remates en Boaco.</p>
+			<p>Somos miembros activos de la agencia ALOP, Red Nicasalud y Federación de Organismos No Gubernamentales de Nicaragua.</p>
+			<p>Elaboramos un Boletín Anual de nuestro quehacer institucional y lo compartimos con las Agencias Internacionales con la cuales trabajamos, además con Universidades, Fundaciones y Redes Nacionales, y con el sector público y privado.</p>
+			<p>Se han realizados tres videos en relación a la Reserva Hídrica Forestal – ADP, en los temas de Agua, Bosques y Aportes de la RHF-ADP en la Sequía,  estos los hemos compartido con las instituciones tanto Gubernamentales como Internacionales</p>
+			<p>Elaboramos un brouchure del proyecto terminado de Manos Unidas. Constancia de reconocimiento de trabajo de las Alcaldías de Belén, Nandaime, San José de los Remates, Somotillo y Delegaciones Municipales del MINED.</p>
 		</div>
 
 	</div>	

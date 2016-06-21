@@ -80,7 +80,7 @@
 			<div class="col-md-2">
                 <a href="{{ URL::to('PaginasAmigas') }}">
     				<img src="{{ asset('img/unete.png') }}" alt="Unete" class="img-responsive">
-    				<p>Unete</p>
+    				<p>Únete</p>
                 </a>
 			</div>
 			<div class="col-md-2">

@@ -9,6 +9,7 @@
     <div data-src="{{asset('img/slider/salud/3.jpg')}}"></div>   
     <div data-src="{{asset('img/slider/salud/4.jpg')}}"></div>   
     <div data-src="{{asset('img/slider/salud/5.jpg')}}"></div> 
+    <div data-src="{{asset('img/slider/salud/6.jpg')}}"></div> 
 </div>
 <div class="img1">
 	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	

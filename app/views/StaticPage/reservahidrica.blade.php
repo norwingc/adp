@@ -36,7 +36,7 @@
 				<div><img src="{{ asset('img/slider/hidrica/6.jpg') }}" alt=""></div>
 				<div><img src="{{ asset('img/slider/hidrica/7.jpg') }}" alt=""></div>
 				<div><img src="{{ asset('img/slider/hidrica/8.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/9.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/hidrica/9.jpg') }}" alt=""></div>				
 			</div>
 		</div>
 	</div>
@@ -61,6 +61,8 @@
 				<div><img src="{{ asset('img/slider/flora/10.jpg') }}" alt=""></div>
 				<div><img src="{{ asset('img/slider/flora/11.jpg') }}" alt=""></div>
 				<div><img src="{{ asset('img/slider/flora/12.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/13.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/14.jpg') }}" alt=""></div>
 			</div>
 		</div>
 	</div>

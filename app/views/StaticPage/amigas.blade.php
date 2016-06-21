@@ -22,7 +22,7 @@
 	<div class="informacion">		
 		<div class="container">
 			<div class="col-md-3"><img src="{{ asset('img/unenteamigas.png') }}" alt="Desarrollo Institucional" class="img-responsive img-titul"></div>
-			<div class="col-md-9"><h2 class="subtitul">Unete</h2></div>
+			<div class="col-md-9"><h2 class="subtitul">Únete</h2></div>
 		</div>
 
 		<div class="titulother">Donantes</div>	
