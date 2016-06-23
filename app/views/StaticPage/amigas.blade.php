@@ -25,7 +25,7 @@
 			<div class="col-md-9"><h2 class="subtitul">Únete</h2></div>
 		</div>
 
-		<div class="titulother">Donantes</div>	
+		<div class="titulother">Organismos de Cooperación</div>	
 
 
 		<div class="paginasamigas container">
@@ -67,16 +67,31 @@
 			<div class="row">
 				<div class="col-md-4"><img src="{{ asset('img/devpaix.png') }}" alt="" class="img-responsive"></div>
 				<div class="col-md-8 text-center"><p class="sitio">sitio web: <a href="https://www.devp.org/fr">https://www.devp.org/fr</a></p></div>
-			</div>
+			</div>		
 
+			<div class="row">
+				<div class="col-md-4"><img src="{{ asset('img/caritasAlemana.jpg') }}" alt="" class="img-responsive" style="width:40%"></div>
+				<div class="col-md-8 text-center"><p class="sitio">sitio web: <a href="http://www.caritas-international.de">http://www.caritas-international.de</a></p></div>
+			</div>	
+
+		</div>
+
+		<div class="titulother">Alianzas</div>	
+
+		<div class="container paginasamigas">
 			<div class="row">
 				<div class="col-md-4"><img src="{{ asset('img/fabretto.png') }}" alt="" class="img-responsive"></div>
 				<div class="col-md-8 text-center"><p class="sitio">sitio web: <a href="https://www.fabretto.org/es/inicio/">https://www.fabretto.org/es/inicio/</a></p></div>
 			</div>
 
 			<div class="row">
-				<div class="col-md-4"><img src="{{ asset('img/nicasalud.png') }}" alt="" class="img-responsive"></div>
+				<div class="col-md-4" ><img src="{{ asset('img/nicasalud.png') }}" alt="" class="img-responsive"></div>
 				<div class="col-md-8 text-center"><p class="sitio">sitio web: <a href="http://nicasalud.org.ni/">http://nicasalud.org.ni/</a></p></div>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4" style="margin-top:2em"><img src="{{ asset('img/alop.jpg') }}" alt="" class="img-responsive"></div>
+				<div class="col-md-8 text-center"><p class="sitio">sitio web: <a href="http://www.alop.org.mx/">http://www.alop.org.mx/</a></p></div>
 			</div>
 		</div>
 	</div>	

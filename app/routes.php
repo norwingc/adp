@@ -51,3 +51,9 @@ Route::get('PaginasAmigas', function()
 	return View::make('StaticPage.amigas');
 });
 
+Route::get('Contactenos', function()
+{
+	return View::make('StaticPage.contacto');
+});
+
+

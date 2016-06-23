@@ -80,7 +80,7 @@
 
 @section('js')	
 
-	<script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAORLGtHmLzUlvBz1FspuJpiO3oo9lLdsc"></script>
 
 	<script type="text/javascript">
 		

@@ -84,9 +84,9 @@
                 </a>
 			</div>
 			<div class="col-md-2">
-                <a href="#">
+                <a href="{{ URL::to('Contactenos') }}">
     				<img src="{{ asset('img/contactenos.png') }}" alt="Contactenos" class="img-responsive">
-    				<p>Contactenos</p>
+    				<p>Contáctenos</p>
                 </a>
 			</div>			
 		</div>

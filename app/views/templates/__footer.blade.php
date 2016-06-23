@@ -6,7 +6,7 @@
 			<li><a href="{{ URL::to('/#QuienesSomos') }}">Qui&eacute;nes Somos</a></li>
 			<li><a href="{{ URL::to('ReservaHidrica') }}">RHF-ADP</a></li>
 			<li><a href="#">Términos de Uso</a></li>			
-			<li><a href="#">Politica de Privacidad</a></li>
+			<li><a href="#">Políticas de Privacidad</a></li>
 		</ul>
 	</div>
 </div>

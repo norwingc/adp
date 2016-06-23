@@ -12,5 +12,8 @@
 @stop
 
 @section('contenido')	
-
+	<div class="container">
+		<a href="{{ asset('document/BOLETIN-ANUAL-2015-80216.pdf') }}" target="new"><img src="{{ asset('img/noticias/pdf1.jpg') }}" alt="Noticias" style="margin:3em auto; display:block" class="img-responsive"></a>	
+		<h2 class="text-center">Boletín Anual 2015</h2>
+	</div>
 @stop
