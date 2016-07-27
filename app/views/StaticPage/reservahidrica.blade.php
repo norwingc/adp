@@ -7,7 +7,8 @@
     <div data-src="{{asset('img/slider/ambiente/1.jpg')}}"></div>
     <div data-src="{{asset('img/slider/ambiente/2.jpg')}}"></div>
     <div data-src="{{asset('img/slider/ambiente/3.jpg')}}"></div>   
-    <div data-src="{{asset('img/slider/ambiente/4.jpg')}}"></div>       
+    <div data-src="{{asset('img/slider/ambiente/4.jpg')}}"></div>
+    <div data-src="{{asset('img/slider/ambiente/5.jpg')}}"></div>       
 </div>
 <div class="img1">
 	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	
@@ -17,8 +18,8 @@
 @section('contenido')
 <div class="reserva">	
 	<div class="row container">
-		<div class="col-md-3"><img src="{{ asset('img/rana.png') }}" alt="Rana" class="img-responsive"></div>
-		<div class="col-md-9"><h2 class="titulreserva">Reserva Hidrica Forestal</h2></div>
+		
+		<div class="col-md-12"><h2 class="titulreserva">Reserva Hidrica Forestal</h2></div>
 	</div>
 	
 	<div class="informacion">
@@ -63,6 +64,12 @@
 				<div><img src="{{ asset('img/slider/flora/12.jpg') }}" alt=""></div>
 				<div><img src="{{ asset('img/slider/flora/13.jpg') }}" alt=""></div>
 				<div><img src="{{ asset('img/slider/flora/14.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/15.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/16.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/17.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/18.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/19.jpg') }}" alt=""></div>
+				<div><img src="{{ asset('img/slider/flora/20.jpg') }}" alt=""></div>
 			</div>
 		</div>
 	</div>

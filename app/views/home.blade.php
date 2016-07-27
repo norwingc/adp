@@ -30,13 +30,17 @@
 	<hr class="container">
 	<div class="historia container">
 		<h2 class="subtitul text-center">Historia</h2>
-		<p>Trabajamos para lograr mejoras duraderas en las condiciones de vida de las familias campesinas empobrecidas, a través de procesos participativos y el desarrollo de capacidades de hombres, mujeres y jóvenes, desde un enfoque de género,generacional y ambiental.</p>		
-		<p>ADP es ampliamente reconocida por su liderazgo, capacidad de servicio y alto nivel de desempeño en la generación de capacidades locales, entre familias campesinas, para mejorar su calidad de vida, en un marco de Desarrollo a Escala Humana.</p>
+		<p>A lo largo de sus 38 años de vida, la ADP ha pasado por grandes fases o etapas en su historia, que van desde su surgimiento, estrechamente vinculado en sus inicios con las acciones de la Conferencia de Religiosos de Nicaragua, hasta alcanzar su propia autonomía en 1982.</p>		
+		<p>Como elemento recurrente en el historial de ADP, se denota un marcado cambio de enfoque de sus acciones, según las circunstancias históricas del país, pasando, entre 1983 y 1994, de posturas eminentemente asistenciales, hasta un enfoque de desarrollo comunitario y local que se orientó a la autogestión y sostenibilidad de las mismas.</p>
+		<p>De 1994 a 2004, el desarrollo social, vinculado a la autonomía, y la sostenibilidad local fueron los ejes de trabajo en las comunidades atendidas. A partir del 2005 y teniendo como referente su Primer Plan Estratégico institucional, la ADP continuó su labor con principios, valores y estrategias generales en un marco de Desarrollo a Escala Humana.</p>
+		<p>En la actualidad ADP está abocada a la ejecución de su Plan Estratégico Institucional para el período 2014-2018.</p>
 	</div>
 	<hr class="container">
 	<div class="quienes container" id="QuienesSomos">
 		<h2 class="subtitul text-center">Qui&eacute;nes Somos</h2>
-		<p>Asociación para el desarrollo de los Pueblos-ADP es una asociación civil nicaragüense, de inspiración cristiana, autónoma, apartidaria, de interés social y no lucrativa.</p>
+		<p>Asociación para el desarrollo de los Pueblos-ADP es una asociación civil nicaragüense, de inspiración cristiana, autónoma, apartidaria, de interés social y no lucrativa, fundada el 15 de septiembre de 1978.</p>
+		<p>Con personalidad jurídica mediante Decreto Legislativo No 1147, publicado en el Diario Oficial La Gaceta No 289 del 10 de Diciembre de 1982, misma que fue ratificada en mayo de 1992 en el marco de la Ley General sobre Asociaciones Sin Fines de Lucro (Ley 147, del 20 de mayo de 1992).</p>
+		<p>ADP está inscrita en el Departamento de Registro y Control de Asociaciones Civiles del Ministerio de Gobernación, con el número perpetuo 163, Folio 149 al 159, Tomo V, Libro Primero.</p>
 	</div>
 	<hr class="container">
 	<div class="row container historia">
