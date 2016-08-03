@@ -4,7 +4,7 @@
 
 @section('slider')
 <div class="camera_wrap">
-    <div data-src="{{asset('img/slider/desarrollo/1.jpg')}}"></div>
+    
     <div data-src="{{asset('img/slider/desarrollo/2.jpg')}}"></div>
     <div data-src="{{asset('img/slider/desarrollo/3.jpg')}}"></div>   
     <div data-src="{{asset('img/slider/desarrollo/4.jpg')}}"></div>   

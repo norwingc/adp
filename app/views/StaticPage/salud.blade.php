@@ -6,8 +6,7 @@
 <div class="camera_wrap">
     <div data-src="{{asset('img/slider/salud/1.jpg')}}"></div>
     <div data-src="{{asset('img/slider/salud/2.jpg')}}"></div>
-    <div data-src="{{asset('img/slider/salud/3.jpg')}}"></div>   
-    <div data-src="{{asset('img/slider/salud/4.jpg')}}"></div>   
+    <div data-src="{{asset('img/slider/salud/3.jpg')}}"></div>         
     <div data-src="{{asset('img/slider/salud/5.jpg')}}"></div> 
     <div data-src="{{asset('img/slider/salud/6.jpg')}}"></div> 
     <div data-src="{{asset('img/slider/salud/7.jpg')}}"></div> 

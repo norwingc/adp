@@ -25,6 +25,12 @@
 	<div class="informacion">
 		<div class="titulother"> <img src="{{ asset('img/hidrico-white.png') }}" alt="" style="width:20%"><span style="margin-left:10px">Recurso Hídrico</span></div>
 	</div>
+
+	<p class="container" style="margin-bottom:1em; font-size:1.2em">En la parte alta de la Reserva nace el Río Malacatoya, formando parte de la
+Cuenca Hidrográfica # 69 que desemboca en el Lago Cocibolca. Dentro de la
+Reserva, el Río recorre una longitud de 2,814 metros, alimentado por ocho
+riachuelos, cinco ojos de agua, destacándose cuatro cascadas con alturas entre
+12 y 42 metros.</p>
 	
 	<div class="container">
 		<div class="row">
@@ -46,6 +52,10 @@
 	<div class="informacion">
 		<div class="titulother"> <img src="{{ asset('img/florayfauna-white.png') }}" alt="" style="width:20%"><span style="margin-left:10px">Flora y Fauna</span></div>
 	</div>
+
+	<p class="container" style="margin-bottom:1em; font-size:1.2em">En la Reserva Hídrica Forestal ADP existen condiciones ambientales para el desarrollo
+de plantas ornamentales “Tropicales Exóticas”, tales como: Orquídeas, Bromelias,
+Helechos, Heliconias y demás.</p>
 	
 	<div class="container">
 		<div class="row">
@@ -77,6 +87,14 @@
 	<div class="informacion">
 		<div class="titulother"> <img src="{{ asset('img/sendero-white.png') }}" alt="" style="width:20%"><span style="margin-left:10px">Senderos</span></div>
 	</div>
+	<p class="container" style="margin-bottom:1em; font-size:1.2em">La Reserva Hídrica Forestal-ADP cuenta con tres senderos de 2,500 metros de longitud
+que conducen a diferentes atractivos turísticos, un mirador con excelentes vistas
+panorámicas del área protegida, donde el visitante podrá observar los paisajes, la
+conservación de los recursos naturales y la biodiversidad existente en la zona. Además,
+se pueden apreciar variedad de mariposas, ranas, reptiles y aves, las cuales son el grupo
+más diverso con 57 especies, seguido de los mamíferos con 38, reptiles 19 y anfibios 7
+especies; de un total de 121 especies identificadas dentro del Área protegida Cerro
+Cumaica-Cerro Alegre.</p>
 	<div class="container">
 	<div class="row">
 			<div class="sliderReserva">
