@@ -57,3 +57,61 @@ Route::get('Contactenos', function()
 });
 
 
+Route::get('test', function()
+{
+	
+	$user = new User();
+	$user->username = 'admin';
+	$user->password = Hash::make('adminadp2016');
+	$user->save();
+
+});
+
+
+
+Route::get('login', function()
+{
+	return View::make('login');
+});
+
+Route::post('login', function(){
+
+	$userdata = array(
+		'username' =>Input::get('username'),
+		'password' =>Input::get('password')
+	);
+
+	if(Auth::attempt($userdata)){
+		return Redirect::to('Administrador');
+	}else{
+		return Redirect::back();
+	}
+
+});
+
+
+///////////////////
+// ADMINISTRADOR //
+///////////////////
+
+Route::group(array('before' => 'auth'), function()
+{	
+	Route::group(array('prefix' => 'Administrador'), function () {
+		Route::get('/', function(){
+			return View::make('administrador.index');
+		});
+
+		Route::group(array('prefix' => 'Slider'), function () {
+			Route::get('Index', 'SliderController@index');
+			Route::post('Index', 'SliderController@storeindex');	
+			Route::get('Index/Delete/{id}', 'SliderController@deleteindex');			
+		});
+
+		Route::get('logout', function(){
+			Auth::logout();
+			return Redirect::to('/');
+		});
+	});	
+});		
+
+
