@@ -41,9 +41,9 @@ Route::get('ReservaHidrica', function()
 	return View::make('StaticPage.reservahidrica');
 });
 
-Route::get('Noticias', function()
+Route::get('Documentos', function()
 {
-	return View::make('StaticPage.noticias');
+	return View::make('StaticPage.documentos');
 });
 
 Route::get('PaginasAmigas', function()
@@ -57,14 +57,9 @@ Route::get('Contactenos', function()
 });
 
 
-Route::get('test', function()
+Route::get('Noticias', function()
 {
-	
-	$user = new User();
-	$user->username = 'admin';
-	$user->password = Hash::make('adminadp2016');
-	$user->save();
-
+	return View::make('StaticPage.noticias');
 });
 
 
