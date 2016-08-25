@@ -3,12 +3,10 @@
 @section('title') ADP | Salud Comunitaria Preventiva @stop
 
 @section('slider')
-<div class="camera_wrap">
-    
-    <div data-src="{{asset('img/slider/desarrollo/2.jpg')}}"></div>
-    <div data-src="{{asset('img/slider/desarrollo/3.jpg')}}"></div>   
-    <div data-src="{{asset('img/slider/desarrollo/4.jpg')}}"></div>   
-    <div data-src="{{asset('img/slider/desarrollo/5.jpg')}}"></div>                  
+<div class="camera_wrap">    
+   @foreach(SliderDesarrollo::all() as $value)
+	    <div data-src="{{asset('img/slider/'.$value->path)}}"></div>	    
+    @endforeach               
 </div>
 <div class="img1">
 	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	

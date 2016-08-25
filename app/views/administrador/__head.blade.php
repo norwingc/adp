@@ -13,7 +13,7 @@
                     <!-- The user image in the navbar-->
                     <img src="{{asset('dist/img/avatar04.png')}}" class="user-image" alt="User Image">
                     <!-- hidden-xs hides the username on small devices so only the image appears. -->
-                    <span class="hidden-xs">Norwin Guerrero</span>
+                    <span class="hidden-xs">Administrador ADP</span>
                 </a>
                 <ul class="dropdown-menu">
                     <!-- The user image in the menu -->

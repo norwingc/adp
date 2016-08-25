@@ -1,5 +1,5 @@
 <div>
-	<p class="no-margin">Asociacion para el Desarrollo de los Pueblos © 2016 ADP </p>
+	<p class="no-margin">Asociaci&oacute;n para el Desarrollo de los Pueblos © 2016 ADP </p>
 	<p class="no-margin">Todos los Derechos Reservados. </p>
 	<div class="menu-footer computer">
 		<ul>

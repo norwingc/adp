@@ -16,13 +16,19 @@
 		</div>
 
 		<div class="noticia">
-			<div class="row">
-				<div class="date col-md-3 text-center"> <span>11</span> <br> Agosto</div>
-				<div class="contenido col-md-7">
-					<img src="{{ asset('img/noticia.jpg') }}" alt="" class="img-responsive">
-					<p>ADP EN EL MES DE LOS NIÑOS Y NIÑAS . "QUE NO FALTE SALUD, ALIMENTACIÓN, EDUCACIÓN GRATUITA, UN DIGNO COMEDOR , UN ÁRBOL POR CADA NIÑO Y NIÑA , EN ARMONÍA CON EL MEDIO AMBIENTE"</p>
+			@foreach(Historia::all() as $value)
+				<div class="row" style="margin-bottom:4em">
+					<?php 
+						$fecha = $value->date; 
+						$fecha = explode("-", $fecha);
+					?>
+					<div class="date col-md-3 text-center"> <span>{{ $fecha[0] }}</span> <br> {{ $fecha[1] }}</div>
+					<div class="contenido col-md-7">
+						<img src="{{ asset('img/historia/'.$value->path) }}" alt="" class="img-responsive">
+						<p>{{ $value->texto }}</p>
+					</div>
 				</div>
-			</div>
+			@endforeach
 		</div>
 	</div>
 @stop

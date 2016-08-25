@@ -99,8 +99,33 @@ Route::group(array('before' => 'auth'), function()
 		Route::group(array('prefix' => 'Slider'), function () {
 			Route::get('Index', 'SliderController@index');
 			Route::post('Index', 'SliderController@storeindex');	
-			Route::get('Index/Delete/{id}', 'SliderController@deleteindex');			
+			Route::get('Index/Delete/{id}', 'SliderController@deleteindex');	
+
+
+			Route::get('Desarrollo', 'SliderController@desarrollo');
+			Route::post('Desarrollo', 'SliderController@storedesarrollo');	
+			Route::get('Desarrollo/Delete/{id}', 'SliderController@deletedesarrollo');		
+
+			Route::get('Organizacion', 'SliderController@organizacion');
+			Route::post('Organizacion', 'SliderController@storeorganizacion');	
+			Route::get('Organizacion/Delete/{id}', 'SliderController@deleteorganizacion');
+
+			Route::get('Salud', 'SliderController@salud');
+			Route::post('Salud', 'SliderController@storesalud');	
+			Route::get('Salud/Delete/{id}', 'SliderController@deletesalud');
+
+			Route::get('Ambiente', 'SliderController@ambiente');
+			Route::post('Ambiente', 'SliderController@storeambiente');	
+			Route::get('Ambiente/Delete/{id}', 'SliderController@deleteambiente');
 		});
+
+		Route::group(array('prefix' => 'Noticias'), function () {
+			Route::get('/', 'HistoriasController@index');
+			Route::get('Add', 'HistoriasController@add');
+			Route::post('Add', 'HistoriasController@store');	
+			Route::get('Delete/{id}', 'HistoriasController@delete');			
+		});
+
 
 		Route::get('logout', function(){
 			Auth::logout();

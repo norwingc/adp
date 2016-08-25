@@ -18,13 +18,17 @@
             <a href="#"><i class="fa fa-sun-o"></i> <span>Slider</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
                 <li><a href="{{ URL::to('Administrador/Slider/Index') }}">Index</a></li>               
+                <li><a href="{{ URL::to('Administrador/Slider/Desarrollo') }}">Desarrollo Institucional</a></li>               
+                <li><a href="{{ URL::to('Administrador/Slider/Organizacion') }}">Organizacion Social</a></li>               
+                <li><a href="{{ URL::to('Administrador/Slider/Salud') }}">Salud Comunitaria</a></li>               
+                <li><a href="{{ URL::to('Administrador/Slider/Ambiente') }}">Medio Ambiente</a></li>               
             </ul>
         </li>
         <li class="treeview">
-            <a href="#"><i class="fa fa-phone-square"></i> <span>Historias</span> <i class="fa fa-angle-left pull-right"></i></a>
+            <a href="#"><i class="fa fa-rss"></i> <span>Noticias</span> <i class="fa fa-angle-left pull-right"></i></a>
             <ul class="treeview-menu">
-                <li><a href="#">Ver</a></li>
-                <li><a href="#">Agregar</a></li>                
+                <li><a href="{{ URL::to('Administrador/Noticias') }}">Ver</a></li>
+                <li><a href="{{ URL::to('Administrador/Noticias/Add') }}">Agregar</a></li>                
             </ul>
         </li>
     </ul>

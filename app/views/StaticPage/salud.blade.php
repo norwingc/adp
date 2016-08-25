@@ -4,14 +4,9 @@
 
 @section('slider')
 <div class="camera_wrap">
-    <div data-src="{{asset('img/slider/salud/1.jpg')}}"></div>
-    <div data-src="{{asset('img/slider/salud/2.jpg')}}"></div>
-    <div data-src="{{asset('img/slider/salud/3.jpg')}}"></div>         
-    <div data-src="{{asset('img/slider/salud/5.jpg')}}"></div> 
-    <div data-src="{{asset('img/slider/salud/6.jpg')}}"></div> 
-    <div data-src="{{asset('img/slider/salud/7.jpg')}}"></div> 
-    <div data-src="{{asset('img/slider/salud/8.jpg')}}"></div> 
-    <div data-src="{{asset('img/slider/salud/9.jpg')}}"></div> 
+   @foreach(SliderSalud::all() as $value)
+	    <div data-src="{{asset('img/slider/'.$value->path)}}"></div>	    
+    @endforeach   
 </div>
 <div class="img1">
 	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	

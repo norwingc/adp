@@ -25,9 +25,15 @@
 			<div class="col-md-9"><h2 class="subtitul">Únete</h2></div>
 		</div>
 
+
+		<h1 class="text-center" style="margin:4em 0">En Construcci&oacute;n</h1>
+
+
+		<!--
+
 		<div class="titulother">Organismos de Cooperación</div>	
 
-
+		
 		<div class="paginasamigas container">
 
 			<div class="row">
@@ -106,10 +112,7 @@
 			</div>
 							
 
-		<!-- 	<div class="row">
-			<div class="col-md-4"><img src="{{ asset('img/devpaix-canada.jpg') }}" alt="" class="img-responsive" ></div>
-			<div class="col-md-8 text-center"><p class="sitio">sitio web: <a href="https://www.devp.org/fr">https://www.devp.org/fr</a></p></div>
-		</div>	 -->					
+					
 
 		</div>
 
@@ -138,6 +141,7 @@
 			</div>
 			
 		</div>
+		-->
 	</div>	
 
 
