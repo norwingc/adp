@@ -117,7 +117,7 @@
 	</script>
 
   	<script>
-  		var myLatlng = new google.maps.LatLng(12.137221, -86.281380);
+  		var myLatlng = new google.maps.LatLng(12.141647016, -86.2835516131);
 
 		var mapOptions = {
 		  center: myLatlng,
@@ -129,7 +129,7 @@
 		var map = new google.maps.Map(document.getElementById("map"), mapOptions);
 
 		 var lugar = new google.maps.Marker({
-          position: new google.maps.LatLng(12.137221, -86.281380),
+          position: new google.maps.LatLng(12.141647016, -86.2835516131),
           map: map,
           animation:google.maps.Animation.BOUNCE
         });

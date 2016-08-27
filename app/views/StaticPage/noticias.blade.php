@@ -21,8 +21,24 @@
 					<?php 
 						$fecha = $value->date; 
 						$fecha = explode("-", $fecha);
+
+
+						$mes = array(
+							"January"   => "Enero",
+							"February " => "Febrero",
+							"March "    => "Marzo",
+							"April "    => "Abril",
+							"May"       => "Mayo",
+							"June"      => "Junio",
+							"July"      => "Julio",
+							"August"    => "Agosto",
+							"September" => "Septiembre",
+							"October"   => "Octubre",
+							"November"  => "Noviembre",
+							"December"  => "Diciembre",
+						);
 					?>
-					<div class="date col-md-3 text-center"> <span>{{ $fecha[0] }}</span> <br> {{ $fecha[1] }}</div>
+					<div class="date col-md-3 text-center"> <span>{{ $fecha[0] }}</span> <br> {{ $mes[$fecha[1]] }}</div>
 					<div class="contenido col-md-7">
 						<img src="{{ asset('img/historia/'.$value->path) }}" alt="" class="img-responsive">
 						<p>{{ $value->texto }}</p>

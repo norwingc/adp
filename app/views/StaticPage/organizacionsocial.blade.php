@@ -21,6 +21,11 @@
 		.mapa2{
 			margin-top: -120px !important;
 		}
+
+		.mapa{
+			width: 100%;
+			height: 280px;
+		}
 	</style>
 @stop
 
@@ -60,7 +65,7 @@
 					<div class="clear"></div>
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/objetivoSCP.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Objetivo estratégico: </span>  Garantizar que 334 familias organizadas en 14 grupos organizados dispongan de recursos, tanto económicos como en especies, para mayor disponibilidad de Alimentos e Ingresos económico.</div>
-					<div class="mapa"><img src="{{ asset('img/mapa.jpg') }}"alt="Mapa" class="img-responsive"></div>
+					<div class="col-md-5"><div class="mapa" id="mapa1"></div></div>
 				</div>
 
 				<div class="row no-margin">
@@ -134,7 +139,7 @@
 					<div class="clear"></div>
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/objetivoSCP.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Objetivo estratégico: </span> Contribuir a la retención local de la producción de granos básicos en tres comunidades rurales del Departamento de Boaco.</div>
-					<div class="mapa mapa2"><img src="{{ asset('img/mapa.jpg') }}"alt="Mapa" class="img-responsive"></div>
+					<div class="col-md-5"><div class="mapa" id="mapa2"></div></div>
 				</div>
 
 				<div class="row no-margin">
@@ -214,4 +219,50 @@
 	</div>
 </div>		
 
+@stop
+
+@section('js')
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAORLGtHmLzUlvBz1FspuJpiO3oo9lLdsc"></script>
+
+<script type="text/javascript">
+
+function initialize() {
+    var latlng = new google.maps.LatLng(11.4386379626, -85.9368851847);
+    var myOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map1 = new google.maps.Map(document.getElementById("mapa1"),  myOptions);
+
+    var lugar = new google.maps.Marker({
+      position: new google.maps.LatLng(11.4386379626, -85.9368851847),
+      map: map1,
+      animation:google.maps.Animation.BOUNCE
+    });
+}
+google.maps.event.addDomListener(window, "load", initialize);
+	
+</script>
+
+<script type="text/javascript">
+
+function initialize() {
+    var latlng = new google.maps.LatLng(12.4926215681, -85.5200621077);
+    var myOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map2 = new google.maps.Map(document.getElementById("mapa2"),  myOptions);
+
+    var lugar = new google.maps.Marker({
+      position: new google.maps.LatLng(12.4926215681, -85.5200621077),
+      map: map2,
+      animation:google.maps.Animation.BOUNCE
+    });
+}
+google.maps.event.addDomListener(window, "load", initialize);
+	
+</script>
 @stop

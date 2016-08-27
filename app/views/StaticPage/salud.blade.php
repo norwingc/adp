@@ -2,6 +2,16 @@
 
 @section('title') ADP | Salud Comunitaria Preventiva @stop
 
+
+@section('css')
+	<style type="text/css">
+		.mapa{
+			width: 100%;
+			height: 280px;
+		}
+	</style>
+@stop
+
 @section('slider')
 <div class="camera_wrap">
    @foreach(SliderSalud::all() as $value)
@@ -42,7 +52,7 @@
 					<div class="clear"></div>
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/objetivo.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Objetivo estratégico: </span>  Contribuir a  mejorar el estado de salud de los niños y las niñas menores de 5 años, madres lactantes y las familias a través de acciones impulsadas en las estrategias de PROCOSAN, MATERNIDAD SEGURA e HIGIENE AMBIENTAL, basadas en el desarrollo de procesos de transferencia de conocimientos y cambios  de comportamientos con la  participación  de toda la comunidad y las unidades de salud del MINSA. </div>
-					<div class="mapa"><img src="{{ asset('img/mapa.jpg') }}"alt="Mapa" class="img-responsive"></div>
+					<div class="col-md-5"><div class="mapa" id="mapa1"></div></div>
 				</div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/impacto.png') }}" alt="Agencia" class="img-responsive icono"></div>
@@ -70,7 +80,7 @@
 					<div class="clear"></div>
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/objetivo.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Objetivo estratégico: </span>  Contribuir a cultivar en los escolares actitudes y prácticas saludables orientadas a promover la prevención de los factores de riesgo que guardan una estrecha relación con los problemas de salud que más le afectan como son las diarreas, el parasitismo intestinal y las infecciones respiratorias, a través de una intervención educativa, cuyo proceso de e nseñanza aprendizaje también facilite generar cambios favorables en el hogar, comunidad y entorno ambiental.</div>
-					<div class="mapa"><img src="{{ asset('img/mapa.jpg') }}"alt="Mapa" class="img-responsive"></div>
+					<div class="col-md-5"><div class="mapa" id="mapa2"></div></div>
 				</div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/impacto.png') }}" alt="Agencia" class="img-responsive icono"></div>
@@ -101,7 +111,7 @@
 					<div class="clear"></div>
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/objetivo.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Objetivo estratégico: </span>  Contribuir a disminuir de forma sostenible la transmisión de la Lepra hasta alcanzar su eliminación como problema de salud (conseguir menos de 1 caso x 10,000 habitantes) a través de la búsqueda activa de enfermos, la instauración oportuna del tratamiento según las normas establecidas por la Organización Mundial de la Salud (OMS) a fin de prevenir las discapacidades y el estricto seguimiento a cargo de los promotores de salud voluntarios adiestrados en la identificación de las manifestaciones clínicas.</div>
-					<div class="mapa"><img src="{{ asset('img/mapa.jpg') }}"alt="Mapa" class="img-responsive"></div>
+					<div class="col-md-5"><div class="mapa" id="mapa3"></div></div>
 				</div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/impacto.png') }}" alt="Agencia" class="img-responsive icono"></div>
@@ -132,7 +142,7 @@
 					<div class="clear"></div>
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/objetivo.png') }}" alt="Agencia" class="img-responsive icono"></div>
 					<div class="texto col-xs-10 col-md-5"><span>Objetivo estratégico: </span>  Contribuir al desarrollo por las familias de capacidades resolutivas en Salud Materna Infantil, Nutrición, Enfermedades Olvidadas (Lepra y Leishmaniosis cutánea) y Salud Ambiental, a través de estrategias de promoción y  prevención, acompañadas de intervenciones para mejorar la alimentación y el acceso al agua segura.</div>
-					<div class="mapa"><img src="{{ asset('img/mapa.jpg') }}"alt="Mapa" class="img-responsive"></div>
+					<div class="col-md-5"><div class="mapa" id="mapa4"></div></div>
 				</div>
 				<div class="row no-margin">
 					<div class="col-md-1 col-xs-2"><img src="{{ asset('img/impacto.png') }}" alt="Agencia" class="img-responsive icono"></div>
@@ -144,5 +154,94 @@
 		</div>
 	</div>
 </div>
+
+@stop
+
+@section('js')
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAORLGtHmLzUlvBz1FspuJpiO3oo9lLdsc"></script>
+
+<script type="text/javascript">
+
+function initialize() {
+    var latlng = new google.maps.LatLng(13.2292333, -86.8690799);
+    var myOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map1 = new google.maps.Map(document.getElementById("mapa1"),  myOptions);
+
+    var lugar = new google.maps.Marker({
+      position: new google.maps.LatLng(13.2292333, -86.8690799),
+      map: map1,
+      animation:google.maps.Animation.BOUNCE
+    });
+}
+google.maps.event.addDomListener(window, "load", initialize);
+	
+</script>
+
+<script type="text/javascript">
+
+function initialize() {
+    var latlng = new google.maps.LatLng(13.0432723513, -86.9048103615);
+    var myOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map2 = new google.maps.Map(document.getElementById("mapa2"), myOptions);
+
+    var lugar = new google.maps.Marker({
+      position: new google.maps.LatLng(13.0432723513, -86.9048103615),
+      map: map2,
+      animation:google.maps.Animation.BOUNCE
+    });
+}
+google.maps.event.addDomListener(window, "load", initialize);
+	
+</script>
+
+<script type="text/javascript">
+
+function initialize() {
+    var latlng = new google.maps.LatLng(12.5058477993, -86.2932940994);
+    var myOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map3 = new google.maps.Map(document.getElementById("mapa3"), myOptions);
+
+    var lugar = new google.maps.Marker({
+      position: new google.maps.LatLng(12.5058477993, -86.2932940994),
+      map: map3,
+      animation:google.maps.Animation.BOUNCE
+    });
+}
+google.maps.event.addDomListener(window, "load", initialize);
+	
+</script>
+
+<script type="text/javascript">
+
+function initialize() {
+    var latlng = new google.maps.LatLng(13.1880956387, -86.9217148726);
+    var myOptions = {
+        zoom: 15,
+        center: latlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP
+    };
+    var map4 = new google.maps.Map(document.getElementById("mapa4"), myOptions);
+
+    var lugar = new google.maps.Marker({
+      position: new google.maps.LatLng(13.1880956387, -86.9217148726),
+      map: map4,
+      animation:google.maps.Animation.BOUNCE
+    });
+}
+google.maps.event.addDomListener(window, "load", initialize);
+	
+</script>
 
 @stop
