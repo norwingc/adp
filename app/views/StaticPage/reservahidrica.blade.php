@@ -4,11 +4,9 @@
 
 @section('slider')
 <div class="camera_wrap">
-    <div data-src="{{asset('img/slider/ambiente/1.jpg')}}"></div>
-    <div data-src="{{asset('img/slider/ambiente/2.jpg')}}"></div>
-    <div data-src="{{asset('img/slider/ambiente/3.jpg')}}"></div>   
-    <div data-src="{{asset('img/slider/ambiente/4.jpg')}}"></div>
-    <div data-src="{{asset('img/slider/ambiente/5.jpg')}}"></div>       
+     @foreach(SliderAmbiente::all() as $value)
+	    <div data-src="{{asset('img/slider/'.$value->path)}}"></div>	    
+    @endforeach          
 </div>
 <div class="img1">
 	<h1 class="titul no-margin no-padding">Asociación para el Desarrollo de los Pueblos</h1>	
@@ -35,15 +33,9 @@ riachuelos, cinco ojos de agua, destacándose cuatro cascadas con alturas entre
 	<div class="container">
 		<div class="row">
 			<div class="sliderReserva">
-				<div><img src="{{ asset('img/slider/hidrica/1.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/2.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/3.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/4.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/5.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/6.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/7.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/8.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/hidrica/9.jpg') }}" alt=""></div>				
+				@foreach(SliderRecurso::all() as $value)
+					<div><img src="{{ asset('img/slider/'.$value->path) }}" alt=""></div>
+				@endforeach							
 			</div>
 		</div>
 	</div>
@@ -60,26 +52,9 @@ Helechos, Heliconias y demás.</p>
 	<div class="container">
 		<div class="row">
 			<div class="sliderReserva">
-				<div><img src="{{ asset('img/slider/flora/1.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/2.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/3.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/4.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/5.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/6.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/7.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/8.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/9.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/10.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/11.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/12.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/13.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/14.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/15.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/16.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/17.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/18.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/19.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/flora/20.jpg') }}" alt=""></div>
+				@foreach(SliderFlora::all() as $value)
+					<div><img src="{{ asset('img/slider/'.$value->path) }}" alt=""></div>
+				@endforeach	
 			</div>
 		</div>
 	</div>
@@ -98,16 +73,9 @@ Cumaica-Cerro Alegre.</p>
 	<div class="container">
 	<div class="row">
 			<div class="sliderReserva">
-				<div><img src="{{ asset('img/slider/senderos/1.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/2.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/3.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/4.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/5.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/6.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/7.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/8.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/9.jpg') }}" alt=""></div>
-				<div><img src="{{ asset('img/slider/senderos/10.jpg') }}" alt=""></div>
+				@foreach(SliderSenderos::all() as $value)
+					<div><img src="{{ asset('img/slider/'.$value->path) }}" alt=""></div>
+				@endforeach	
 			</div>
 		</div>
 	</div>

@@ -186,4 +186,113 @@ class SliderController extends BaseController {
 		return Redirect::back();
 	}
 
+	public function recurso()
+	{	
+		$slider = SliderRecurso::all();
+		$title = 'Agregar Slider de Recurso Hídrico';
+		$url = 'Administrador/Slider/Recurso';		
+		return View::make('administrador.slider.index', compact('slider', 'title', 'url'));
+	}
+
+	public function storerecurso()
+	{
+		$slider = new SliderRecurso();
+		$slider->name = Input::get('name');
+
+		if(Input::hasFile('path')) {
+			Input::file('path')->move('img/slider/recurso/', Input::file("path")->getClientOriginalName());
+			$slider->path = 'recurso/'.Input::file("path")->getClientOriginalName();
+		}
+
+		$slider->save();
+
+		Session::flash('message', 'Imagen agregada');	
+		return Redirect::back();
+	}
+
+	public function deleterecurso($id)
+	{
+		$slider = SliderRecurso::find($id);
+
+		File::delete('img/slider/'. $slider->path);
+
+		$slider->delete();
+
+		Session::flash('message', 'Imagen Borrada');	
+		return Redirect::back();
+	}
+
+
+	public function flora()
+	{	
+		$slider = SliderFlora::all();
+		$title = 'Agregar Slider de Recurso Flora y Fauna';
+		$url = 'Administrador/Slider/Flora';		
+		return View::make('administrador.slider.index', compact('slider', 'title', 'url'));
+	}
+
+	public function storeflora()
+	{
+		$slider = new SliderFlora();
+		$slider->name = Input::get('name');
+	
+		if(Input::hasFile('path')) {
+			Input::file('path')->move('img/slider/flora/', Input::file("path")->getClientOriginalName());
+			$slider->path = 'flora/'.Input::file("path")->getClientOriginalName();
+		}
+
+		$slider->save();
+
+		Session::flash('message', 'Imagen agregada');	
+		return Redirect::back();
+	}
+
+	public function deleteflora($id)
+	{
+		$slider = SliderFlora::find($id);
+
+		File::delete('img/slider/'. $slider->path);
+
+		$slider->delete();
+
+		Session::flash('message', 'Imagen Borrada');	
+		return Redirect::back();
+	}
+
+	public function senderos()
+	{	
+		$slider = SliderSenderos::all();
+		$title = 'Agregar Slider de Senderos';
+		$url = 'Administrador/Slider/Senderos';		
+		return View::make('administrador.slider.index', compact('slider', 'title', 'url'));
+	}
+
+	public function storesenderos()
+	{
+		$slider = new SliderSenderos();
+		$slider->name = Input::get('name');
+	
+		if(Input::hasFile('path')) {
+			Input::file('path')->move('img/slider/senderos/', Input::file("path")->getClientOriginalName());
+			$slider->path = 'senderos/'.Input::file("path")->getClientOriginalName();
+		}
+
+		$slider->save();
+
+		Session::flash('message', 'Imagen agregada');	
+		return Redirect::back();
+	}
+
+	public function deletesenderos($id)
+	{
+		$slider = SliderSenderos::find($id);
+
+		File::delete('img/slider/'. $slider->path);
+
+		$slider->delete();
+
+		Session::flash('message', 'Imagen Borrada');	
+		return Redirect::back();
+	}
+
 }

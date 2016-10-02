@@ -21,7 +21,20 @@
                 <li><a href="{{ URL::to('Administrador/Slider/Desarrollo') }}">Desarrollo Institucional</a></li>               
                 <li><a href="{{ URL::to('Administrador/Slider/Organizacion') }}">Organizacion Social</a></li>               
                 <li><a href="{{ URL::to('Administrador/Slider/Salud') }}">Salud Comunitaria</a></li>               
-                <li><a href="{{ URL::to('Administrador/Slider/Ambiente') }}">Medio Ambiente</a></li>               
+                <li><a href="{{ URL::to('Administrador/Slider/Ambiente') }}">Medio Ambiente</a></li> 
+                <li>
+                    <a href="#">RHF
+                        <span class="pull-right-container">
+                            <i class="fa fa-angle-left pull-right"></i>
+                        </span>
+                    </a>
+                    <ul class="treeview-menu">
+                        <li><a href="{{ URL::to('Administrador/Slider/Recurso') }}"><i class="fa fa-circle-o"></i>Recurso Hídrico</a></li>
+                        <li><a href="{{ URL::to('Administrador/Slider/Flora') }}"><i class="fa fa-circle-o"></i>Flora y Fauna</a></li>
+                        <li><a href="{{ URL::to('Administrador/Slider/Senderos') }}"><i class="fa fa-circle-o"></i>Senderos</a></li>                    
+                    </ul>
+                </li> 
+
             </ul>
         </li>
         <li class="treeview">

@@ -37,9 +37,9 @@
 		<!-- Logo -->
 		<a href="{{ URL::to('/Administrador') }}" class="logo">
 			<!-- mini logo for sidebar mini 50x50 pixels -->
-			<span class="logo-mini">Administrador ADP</span>
+			<span class="logo-mini">ADP</span>
 			<!-- logo for regular state and mobile devices -->
-			<span class="logo-lg"></span>
+			<span class="logo-lg">Administrador ADP</span>
 		</a>
         <!-- Header Navbar -->
         @include('administrador.__head')

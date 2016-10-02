@@ -117,6 +117,18 @@ Route::group(array('before' => 'auth'), function()
 			Route::get('Ambiente', 'SliderController@ambiente');
 			Route::post('Ambiente', 'SliderController@storeambiente');	
 			Route::get('Ambiente/Delete/{id}', 'SliderController@deleteambiente');
+
+			Route::get('Recurso', 'SliderController@recurso');
+			Route::post('Recurso', 'SliderController@storerecurso');	
+			Route::get('Recurso/Delete/{id}', 'SliderController@deleterecurso');
+
+			Route::get('Flora', 'SliderController@flora');
+			Route::post('Flora', 'SliderController@storeflora');	
+			Route::get('Flora/Delete/{id}', 'SliderController@deleteflora');
+
+			Route::get('Senderos', 'SliderController@senderos');
+			Route::post('Senderos', 'SliderController@storesenderos');	
+			Route::get('Senderos/Delete/{id}', 'SliderController@deletesenderos');
 		});
 
 		Route::group(array('prefix' => 'Noticias'), function () {
